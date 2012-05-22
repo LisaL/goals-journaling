@@ -1,0 +1,89 @@
+body {
+	margin:0px;
+	padding:0px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	}
+	
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:28px;
+	line-height:28px;
+	font-weight:900;
+	color:#ccc;
+	}
+	
+p {
+	font:11px/20px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+	}
+	
+#Content>p {margin:0px; text-indent:30px;}
+
+a {
+	color:#09c;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:600;
+	font-family:verdana, arial, helvetica, sans-serif;
+	}
+	
+a:link {color:#09c;}
+
+a:visited {color:#07a;}
+
+a:hover {background-color:#eee;}
+
+#Header {
+	font-size:24px;
+	margin:50px 0px 10px 0px;
+	padding:17px 0px 0px 20px;
+	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
+	height:33px; /* 14px + 17px + 2px = 33px */
+	border-style:solid;
+	border-color:black;
+	border-width:1px 0px; /* top and bottom borders: 1px; left and right borders: 0px */
+	line-height:11px;
+	background-color:#eee;
+
+/* Thanks to Tantek Celik for this hack and to Eric Costello for publicizing it. 
+IE5/Win incorrectly parses the "\"}"" value, prematurely closing the style 
+declaration. The incorrect IE5/Win value is above, while the correct value is 
+below. See http://glish.com/css/hacks.asp for details. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height:14px; /* the correct height */
+	}
+/* Use with the Tantek Celik hack (above). */
+body>#Header {height:14px;}
+
+#Content {
+	margin:0px 210px 50px 10px;
+	padding:10px;
+	}
+
+#Menu {
+	position:absolute;
+	top:100px;
+	right:20px;
+	width:172px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+/* Tantek Celik hack. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:150px;
+	}
+/* Opera 5 */
+body>#Menu {width:150px;}
+
+.error {
+	color:#FF0033;
+	font-size:14px;
+	}
+

@@ -1,0 +1,32 @@
+<!-- Start Footer -->
+</div><!-- Content here -->
+
+<div id="Menu">
+	<a href="index.php" title="Home">Home</a><br />
+	<?php 
+	// Links based on login status
+	if (isset($_SESSION['user_id'])) {
+		echo '<a href="logout.php" title="Logout">Logout</a><br />
+	<a href="change_password.php" title="Change Your Password">Change Password</a><br />
+	';
+		// Add links if the user is an administrator:
+		if ($_SESSION['user_level'] == 1) {
+			echo '<a href="view_users.php" title="View All Users">View Users</a><br />
+		<a href="#">Admin Page Functions</a><br />
+		';
+		}
+	} else { // Not logged in.
+		echo '<a href="register.php" title="Become a Member">Become a Member Now</a><br />
+	<a href="login.php" title="Login">Login</a><br />
+	<a href="forgot_password.php" title="Password Retrieval">Retrieve Password</a><br />
+	';
+	}
+	?>
+	<style="font-weight: bold; color: black"><a href="/blog">Blog</a><br />
+	<style="font-weight: bold; color: black"><a href="/contact">Contact</a><br />
+</div><!-- Menu -->
+</body>
+</html>
+<?php // Flush buffered output.
+ob_end_flush();
+?>
