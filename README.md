@@ -1,11 +1,11 @@
-goals-journaling
+webapp
 ======
 
-Preliminary Notes
+Initial Notes
 -------------
-This README contains high-level, initial, outline information for a web-based, personal acheivement system.
+This README contains preliminary, outline information for a web-based, personal acheivement system.
 
-It features personal goal-setting, personal behavior journaling, creating recommendations and discovering matches on social networks and a modular/ scalable architecture.
+It features personal goal-setting, progress tracking, creating recommendations and discovering matches on social networks and a modular/ scalable architecture.
 
 Languages
 ---------
@@ -13,7 +13,7 @@ CSS3, HTML4/5, JavaScript, JSON, Markdown, PHP5, Python, WSDL, SOAP, XML
 
 Libraries, API's
 ----------------
-AWS, Facebook, GD, jQuery, LinkedIn, MediaWiki, Twitter Bootstrap, YUI
+AWS, Facebook, GD, jQuery, LinkedIn, MediaWiki, Twitter, YUI
 
 Methods
 -------
